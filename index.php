@@ -102,6 +102,12 @@ if($action===null) {
 
     include('view/vehicle_list.php');
         
+
+
+
+
+
+
     
 
 
