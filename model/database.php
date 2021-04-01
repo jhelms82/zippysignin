@@ -6,9 +6,9 @@
 
 // Heroku connection
 
-$dsn = 'mysql:host=vkh7buea61avxg07.cbetxkdyhwsb.us-east-1.rds.amazonaws.com;dbname=uwcd6qpi5gyusjg7';
-$username = 'pdriq8cuqelatgsw';
-$password = 'q3toexl46xesn7ap';
+$dsn = 'mysql:host=	g84t6zfpijzwx08q.cbetxkdyhwsb.us-east-1.rds.amazonaws.com;dbname=tcbvo63ef7tkc7sw';
+$username = 'tcbvo63ef7tkc7sw';
+$password = 'ijfdttxcn0ffz3q8';
 
 try {
     //local development server connection
