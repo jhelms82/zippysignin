@@ -1,3 +1,4 @@
+  
 <?php 
     function get_vehicles_by_class($class_id, $sort) {
         global $db;
@@ -8,7 +9,7 @@
         }
         
         $query = 'SELECT V.ID, V.year, M.Make, V.model, V.price, T.Type, C.Class 
-        FROM vehicles V 
+        FROM vehicle V 
         LEFT JOIN makes M ON V.make_id = M.ID 
         LEFT JOIN classes C ON V.class_id = C.ID 
         LEFT JOIN types T ON V.type_id = T.ID 
@@ -32,7 +33,7 @@
         }
         
         $query = 'SELECT V.ID, V.year, M.Make, V.model, V.price, T.Type, C.Class 
-        FROM vehicles V 
+        FROM vehicle V 
         LEFT JOIN makes M ON V.make_id = M.ID 
         LEFT JOIN classes C ON V.class_id = C.ID 
         LEFT JOIN types T ON V.type_id = T.ID  
@@ -56,7 +57,7 @@
         }
         
         $query = 'SELECT V.ID, V.year, M.Make, V.model, V.price, T.Type, C.Class 
-        FROM vehicles V 
+        FROM vehicle V 
         LEFT JOIN makes M ON V.make_id = M.ID 
         LEFT JOIN classes C ON V.class_id = C.ID 
         LEFT JOIN types T ON V.type_id = T.ID  
@@ -79,7 +80,7 @@
             $orderby = 'V.price';
         }
         $query = 'SELECT V.ID, V.year, M.Make, V.model, V.price, T.Type, C.Class 
-            FROM vehicles V 
+            FROM vehicle V 
             LEFT JOIN makes M ON V.make_id = M.ID 
             LEFT JOIN classes C ON V.class_id = C.ID 
             LEFT JOIN types T ON V.type_id = T.ID  
@@ -93,7 +94,7 @@
 
     function delete_vehicle($vehicle_id) {
         global $db;
-        $query = 'DELETE FROM vehicles WHERE ID = :vehicle_id';
+        $query = 'DELETE FROM vehicle WHERE ID = :vehicle_id';
         $statement = $db->prepare($query);
         $statement->bindValue(':vehicle_id', $vehicle_id);
         $statement->execute();
@@ -102,7 +103,7 @@
 
     function add_vehicle($make_id, $type_id, $class_id, $year, $model, $price) {
         global $db;
-        $query = 'INSERT INTO vehicles (year, make_id, model, price, type_id, class_id)
+        $query = 'INSERT INTO vehicle (year, make_id, model, price, type_id, class_id)
               VALUES
                  (:year, :make_id, :model, :price, :type_id, :class_id)';
         $statement = $db->prepare($query);

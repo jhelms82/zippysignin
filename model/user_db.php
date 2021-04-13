@@ -2,7 +2,7 @@
 
 
 function emptyInputName($firstname) {
-    $result;
+  
     if (empty($firstname)) {
         $result = true;
     }

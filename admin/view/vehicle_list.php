@@ -97,7 +97,7 @@
                     <?php } else { ?>
                     <td>None</td>
                     <?php } ?>
-                    <td><?= "$".number_format($vehicle['price'], 2); ?></td>
+                    <td><?php ($vehicle['price']); ?></td>
                     <td>
                         <form action="." method="post">
                             <input type="hidden" name="action" value="delete_vehicle">

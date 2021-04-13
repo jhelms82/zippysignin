@@ -67,7 +67,10 @@
     </form>
 </nav>
 <section>
-    <?php if($vehicles) { ?>
+
+    <?php
+
+    if($vehicles) { ?>
     <div id="table-overflow-customer" class="table-overflow-customer">
         <table>
             <thead>
