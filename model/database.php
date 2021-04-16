@@ -1,6 +1,6 @@
 <?php
 //local development server connection
- //$dsn = 'mysql:host=localhost;dbname=zippy';
+// $dsn = 'mysql:host=localhost;dbname=zippy';
 //$username = 'root';
 //$password = 'sesame';
 
@@ -23,4 +23,3 @@ try {
     include('../view/error.php');
     exit();
 }
-?>
