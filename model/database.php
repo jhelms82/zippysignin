@@ -1,12 +1,12 @@
 <?php
 //local development server connection
 // $dsn = 'mysql:host=localhost;dbname=zippy';
-//$username = 'root';
-//$password = 'sesame';
+// $username = 'root';
+// $password = 'sesame';
 
 // Heroku connection
 
-$dsn = 'mysql:host=	g84t6zfpijzwx08q.cbetxkdyhwsb.us-east-1.rds.amazonaws.com;dbname=tcbvo63ef7tkc7sw';
+$dsn = 'mysql:host=	g84t6zfpijzwx08q.cbetxkdyhwsb.us-east-1.rds.amazonaws.com;dbname=uwcd6qpi5gyusjg7';
 $username = 'tcbvo63ef7tkc7sw';
 $password = 'ijfdttxcn0ffz3q8';
 
